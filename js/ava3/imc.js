@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript com HTML</title>
-</head>
-<body>
-    <h1>Formas de JS</h1>
+// Classificação de IMC:
+//Escreva um programa em JavaScript que solicita ao usuário seu peso (em quilogramas) e sua altura (em metros). Em seguida, calcule o IMC com a fórmula:
 
-    <!-- Forma 01 Arquivo Externo -->
-    <!--<script src="js/script.js"></script>-->
-
-    <!-- Forma 02 Incluido internamente -->
-    <script>
-        //let x = prompt("Digite Seu nome: ");
-        //alert(x);
-    
-        let peso;
+let peso;
 let altura;
 let imc;
 
@@ -41,9 +26,3 @@ if(imc > 0 && imc < 18.5) {
 } else {
     alert("Não foi possível calcular o IMC. Tente novamente.");
 }
-    </script>
-
-    <!-- Forma 03 -->
-    <button onclick="alert('Estamos ao Vivo')">Aperte Aqui!</button>
-</body>
-</html>
