@@ -14,6 +14,8 @@ tempoMinutos = prompt.question("Digite somente a quantidade de Minutos: ");
 
 if(tempoMinutos === "") {
     tempoMinutos = 0;
+} else {
+    console.log("Digite um valor entre maior que 0 ou deixe em branco o campo")
 }
 
 tempoSegundos = (

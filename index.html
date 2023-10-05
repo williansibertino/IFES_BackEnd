@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript com HTML</title>
+</head>
+<body>
+    <h1>Formas de JS</h1>
+
+    <!-- Forma 01 Arquivo Externo -->
+    <!--<script src="js/script.js"></script>-->
+
+    <!-- Forma 02 Incluido internamente -->
+    <script>
+        //let x = prompt("Digite Seu nome: ");
+        //alert(x);
+        let primeiraIdade;
+let segundaIdade;
+
+primeiraIdade = prompt("Digite a primeira idade.")
+segundaIdade = prompt("Digite a segunda idade.")
+
+if(primeiraIdade < 1 || segundaIdade < 1) {
+    alert("Você digitou uma idade abaixo do minimo que é 1 ano.")
+} else if (primeiraIdade > segundaIdade){
+    alert("A idade de " + primeiraIdade + " anos é maior que você digitou.")
+} else if (primeiraIdade == segundaIdade) {
+    alert("As duas idades que você digitou são iguais.")
+} else {
+    alert(" A idade de " + segundaIdade + " anos é maior que você digitou.")
+}
+
+    </script>
+
+    <!-- Forma 03 -->
+    <button onclick="alert('Estamos ao Vivo')">Aperte Aqui!</button>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Volume</title>
+</head>
+<body>
+    <h2>Calcule o Volume na funcção Abaixo:</h2>
+
+    <form>
+        <label>Base da caixa em (metros)</label>
+        <input type="number" id="base">
+        <br>
+        <label>Altura da caixa em (metros)</label>
+        <input type="number" id="altura">
+        <button onclick="calcularVolume()">Calcular</button>
+    </form>
+
+    <script>
+        function calcularVolume(){
+            let base = document.getElementById('base').value;
+            let altura = document.getElementById('altura').value;
+            const pi = 3.14;
+
+            let volume = pi * (base * base) * altura;
+            let litros = volume * 1000;
+
+            alert("Essa caixa possui capacidade de " + litros + " litros");
+        }
+    </script>
+</body>
+</html>
