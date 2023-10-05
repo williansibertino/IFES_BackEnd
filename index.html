@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript com HTML</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formas de JS</h1>
 
-    <!-- Forma 01 Arquivo Externo -->
-    <!--<script src="js/script.js"></script>-->
-
-    <!-- Forma 02 Incluido internamente -->
-    <script>
-        //let x = prompt("Digite Seu nome: ");
-        //alert(x);
-    
-        let peso;
+<script>
+let peso;
 let altura;
 let imc;
 
@@ -41,9 +38,6 @@ if(imc > 0 && imc < 18.5) {
 } else {
     alert("Não foi possível calcular o IMC. Tente novamente.");
 }
-    </script>
-
-    <!-- Forma 03 -->
-    <button onclick="alert('Estamos ao Vivo')">Aperte Aqui!</button>
+</script>
 </body>
 </html>

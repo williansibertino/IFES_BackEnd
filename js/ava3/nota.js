@@ -14,7 +14,7 @@ terceiraNota = prompt("Dgite a terceira nota entre 1 e 10?");
 mediaNotas = (parseFloat(primeiraNota) + parseFloat(segundaNota) + parseFloat(terceiraNota)) / parseInt(quantidadeNotas);
 
 if(mediaNotas >= 7) {
-    alert("Você está aprovado. Sua nota geral foi " + mediaNotas);
+    alert("Você está aprovado. Sua nota geral foi " + mediaNotas.toFixed(1));
 } else {
-    alert("Você está reprovado. Sua nota geral foi " + mediaNotas);
+    alert("Você está reprovado. Sua nota geral foi " + mediaNotas.toFixed(1));
 }

@@ -6,7 +6,7 @@ let mesdoAno;
 
 mesdoAno = prompt("Digite de 1 a 12 para saber qual é o mês do ano em que você está.");
 
-if (mesdoAno < 1 && mesdoAno > 12) {
+if (mesdoAno < 1 || mesdoAno > 12) {
     alert("Digite um mês de 1 a 12");
 }  else if (mesdoAno == 1) {
     alert("O número " + mesdoAno + " é referente ao mês de Janeiro");
