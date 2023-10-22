@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript com HTML</title>
-    <style>
-        body {
-            background-color: antiquewhite;
-        }
-    </style>
-</head>
-<body>
-
-<script>
-// Notas: Reduzir os alerts em 1 só bloco e usei \n para pular cada atributo.
-
 let letra = prompt("Informe uma letra para o jogo da Adedonha: ");
 
 switch(letra){
@@ -99,6 +82,3 @@ switch(letra){
     default:
         alert("Letra inválida!");
 }
-</script>
-</body>
-</html>
