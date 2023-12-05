@@ -2,8 +2,8 @@
 // (uma palavra que é lida da mesma forma de trás para frente). 
 // Utilize uma estrutura de repetição para comparar os caracteres.
 
-// Pesuisa efetuada no site: 
-//https://www.freecodecamp.org/portuguese/news/tres-maneiras-de-inverter-uma-string-em-javascript/
+// Pesquisa efetuada no site: 
+// https://www.freecodecamp.org/portuguese/news/tres-maneiras-de-inverter-uma-string-em-javascript/
 
 let palavra;
 let palindromo = "";
@@ -14,7 +14,7 @@ for (let i = palavra.length - 1; i >= 0; i--) {
     palindromo += palavra[i];
 }
 if (palavra == palindromo) {
-    alert('Positivo');
+    alert('A palavra é um Palíndromo.');
 } else {
-    alert('Negativo');
+    alert('A palavra não é um Palíndromo.');
 }
