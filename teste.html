@@ -7,22 +7,55 @@
 </head>
 <body>
     <script>
-// Pesuisa efetuada no site: 
-//https://www.freecodecamp.org/portuguese/news/tres-maneiras-de-inverter-uma-string-em-javascript/
+// Question 1 - O splice vai retirar a partir do indice 2 e a quantidade de indices vai ser 2 tambem. Ou seja ele ira pegar o indice 2 e 3 que sao C e D e trocar por x e y.
+let letras1 = ['a','b','c','d','e'];
+let resultado1  = letras1.splice(2,2,'x','y');
+console.log(resultado1);
+console.log(letras1);
 
-let palavra;
-let palindromo = "";
+// Question 2 - O splice vai retirar a partir do indice 2 o terceiro elemento do vetor que e a letra C
+// Question 6 - O metodo splice tem a funcao de remover e modificar elementos no vetor de forma espeficifica.
+let letras2 = ['a', 'b', 'c', 'd', 'e'];
+let letraRemovida = letras2.splice(2, 1);
+console.log(letraRemovida);
+console.log(letras2);
 
-palavra = prompt("Digite uma palavra para fazer a verificacao de Palindromo");
+// Question 3 - O indexOf e o lastIndexOf precisam do valor do vetor para retornar qual indice que ele e armazenadio.
+let letras3 = ['a', 'b', 'c', 'd', 'e'];
+console.log(letras3.indexOf('a'));
+console.log(letras3.lastIndexOf('e'));
 
-for (let i = palavra.length - 1; i >= 0; i--) {
-    palindromo += palavra[i];
-}
-if (palavra == palindromo) {
-    alert('A palavra é um Palíndromo.');
-} else {
-    alert('A palavra não é um Palíndromo.');
-}
+// Querstion 4 - O metodo concatn junta dois vetores em um so
+let letras4 = ['a', 'b', 'c', 'd', 'e'];
+let outrasLetras = ['f', 'g', 'h', 'i', 'k'];
+let concatenado = letras4.concat(outrasLetras);
+console.log(concatenado);
+
+// Question 5 - O metodo slice cria um copia do vetor original removendo os elementos entre um espaco detereminado de indices,  ou seja do indice 1 a 3, os elementos serao copiados. E os elementos do indice 0 e 4 serao removidos. 
+let letras5 = ['a', 'b', 'c', 'd', 'e'];
+let novasLetras = letras5.slice(1,4);
+console.log(novasLetras);
+
+// Question 7 - O metodo unshift adiciona elementos no incio do vetor.
+let letras7 = ['c', 'd', 'e'];
+letras7.unshift('a','b');
+console.log(letras7);
+
+// Question 8 - O metodo shift remove os primeros elementos d eum vetor.
+let letras8 = ['a','b','c', 'd', 'e'];
+letras8.shift();
+console.log(letras8);
+
+// Question 9 - O metodo sort com a configuracao de a para b - ordena os lementos de forma crescente.
+let numeros = [25, 10, 5, 30, 15];
+console.log(numeros);
+numeros.sort((a, b) => a - b);
+console.log(numeros);
+
+// Question 10 - O metodo pop remove o ultimo elemento do vetor.
+let frutas = ['maçã', 'banana', 'uva'];
+let ultimaFruta = frutas.pop();
+console.log(ultimaFruta);
     </script>
 </body>
 </html>
